@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="0.0" styleClass="login" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainLayout">
+   <children>
+      <TextField id="usertxt" fx:id="usernameTextField" layoutX="334.0" layoutY="114.0" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" styleClass="usertxt" stylesheets="@login.css">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="334.0" layoutY="201.0" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" />
+      <Label layoutX="346.0" layoutY="74.0" prefHeight="47.0" prefWidth="234.0" text="Username" textFill="#0f4c75">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="161.0" prefHeight="47.0" prefWidth="234.0" text="Password" textFill="#0f4c75">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logInButton" defaultButton="true" layoutX="334.0" layoutY="277.0" mnemonicParsing="false" onAction="#logInMethod" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" text="LOG IN" textFill="#bbe1fa">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font></Button>
+      <Label layoutX="65.0" layoutY="198.0" prefHeight="50.0" prefWidth="170.0" text="TRIBER" textAlignment="CENTER" textFill="#d45d79">
+         <font>
+            <Font name="Century" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="191.0" fitWidth="170.0" layoutX="65.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/handshake_200px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="newAccount" layoutX="33.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#newAccountMethod" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #d45d79; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" text="SIGN IN" textFill="#1b262c">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

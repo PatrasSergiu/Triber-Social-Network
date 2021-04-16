@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="396.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.chatPageController">
+    <children>
+        <TableView fx:id="friendsTableView" layoutX="6.0" layoutY="35.0" prefHeight="423.0" prefWidth="220.0">
+            <columns>
+                <TableColumn fx:id="columnUtilizatori" prefWidth="112.0" text="Utilizatori" />
+                <TableColumn fx:id="columnPrieteni" prefWidth="106.0" text="Prieteni" />
+            </columns>
+        </TableView>
+        <Button layoutX="249.0" layoutY="35.0" mnemonicParsing="false" onAction="#showFriendRequests" prefHeight="29.0" prefWidth="123.0" text="Cereri de prietenie" />
+        <Label fx:id="userLabel" layoutX="162.0" layoutY="1.0" text="Utilizator">
+            <font>
+                <Font name="System Italic" size="18.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

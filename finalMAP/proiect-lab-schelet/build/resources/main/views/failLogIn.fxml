@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="logInStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="429.0" style="-fx-background-color: #1b262c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainLayout">
+   <children>
+      <Label prefHeight="54.0" prefWidth="285.0" text="Autentificare" textAlignment="CENTER" textFill="#1b262c">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets left="75.0" right="75.0" />
+         </padding>
+      </Label>
+      <Separator prefWidth="200.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding></Separator>
+      <HBox prefHeight="47.0" prefWidth="289.0">
+         <children>
+            <TextField fx:id="usernameTextField" prefHeight="30.0" prefWidth="149.0" style="-fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #3282b8; -fx-background-color: #0f4c75;">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="10.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="Username">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Separator layoutX="10.0" layoutY="64.0" prefWidth="200.0">
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding></Separator>
+      <HBox layoutX="10.0" layoutY="67.0" prefHeight="47.0" prefWidth="289.0">
+         <children>
+            <PasswordField fx:id="passwordTextField" prefHeight="30.0" prefWidth="149.0">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </PasswordField>
+            <Label text="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="2.0" right="2.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="10.0" layoutY="114.0" prefWidth="200.0" />
+      <Button fx:id="logInButton" mnemonicParsing="false" onAction="#logInMethod" prefHeight="30.0" prefWidth="228.0" text="Log in">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" top="200.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="newAccount" onMouseClicked="#newAccountMethod" prefHeight="10.0" prefWidth="93.0" text="Creeaza cont nou">
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </Label>
+   </children>
+</VBox>

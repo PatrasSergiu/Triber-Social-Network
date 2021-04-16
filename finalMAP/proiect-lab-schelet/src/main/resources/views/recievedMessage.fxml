@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="47.0" prefWidth="262.0" style="-fx-background-radius: 70; -fx-background-color: #3282b8; -fx-border-color: #bbe1fa; -fx-border-radius: 70;" styleClass="replyBtn" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.sentMessageController">
+    <children>
+        <Label fx:id="recievedLabel" layoutX="7.0" prefHeight="47.0" prefWidth="221.0" text="Label" textFill="#bbe1fa" wrapText="true">
+            <font>
+                <Font name="Century" size="14.0" />
+            </font>
+        </Label>
+      <Label fx:id="replyLabel" layoutX="69.0" layoutY="16.0" minHeight="2.0" minWidth="2.0" prefHeight="2.0" prefWidth="2.0" style="-fx-text-fill: transparent; -fx-background-color: transparent;" text="0" />
+      <Button fx:id="replyBtn" layoutX="217.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#replyToMessage" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/reply_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+    </children>
+</AnchorPane>

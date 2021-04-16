@@ -1,0 +1,148 @@
+#btnSend:hover {
+    -fx-setGraphic: url("../imgs/reply_100px.png");
+}
+
+.table-view {
+
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: #bbe1fa;
+    -fx-padding: 0;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #1b262c;
+    -fx-border-width: 0;
+}
+.table-view.column-header {
+    -fx-background-color: #1b262c;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #1b262c;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #bbe1fa;
+    -fx-font-family: Century;
+    -fx-font-size: 14;
+}
+
+.table-cell {
+    -fx-border-color: transparent -fx-box-border transparent transparent;
+    -fx-font: 12px "Century";
+    -fx-text-fill: #bbe1fa;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #0f4c75;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: #bbe1fa;
+}
+
+column-header-background {
+    -fx-background: transparent;
+}
+.table-row-cell:even {
+    -fx-background-color: #3282b8;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: #bbe1fa;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1b262c;
+    -fx-text-fill: #bbe1fa;
+}
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 0;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-border-color: #bbe1fa;
+    -fx-background-color: lightgray, #0f4c75;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: #3282b8;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #3282b8;
+    -fx-text-fill: white;
+}
+.pagination > .pagination-control {
+    -fx-text-fill: #bbe1fa;
+    -fx-background-radius: 20;
+}
+#tabPane{
+    -fx-background-color: #1b262c;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-background-color: transparent;
+}
+.tab {
+    -fx-background-color: #1b262c;
+}
+.tab-pane *.tab-header-background {
+    -fx-background-color: transparent;
+    -fx-effect: innershadow(two-pass-box , transparent , 0, 0.0 , 0 , 0);
+}
+#homeTab {
+    -fx-padding: 0 -1 -1 0;
+}
+.tab-down-button {
+    -fx-padding: 0;
+}
+
+.tab-down-button .arrow {
+    -fx-padding: 0;
+}
+
+.date-picker {
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-background-color: #0f4c75;
+    -fx-control-inner-background: #0f4c75;
+    -fx-text-fill: #bbe1fa;
+}
+.date-picker > .text-field {
+    -fx-background-radius: 30 0 0 30;
+}
+.date-picker > .arrow-button {
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-radius: 0 30 30 0;
+    -fx-background-color: #3282b8;
+    -fx-control-inner-background: #3282b8;
+    -fx-text-fill: #bbe1fa;
+}
+.date-picker-popup { -fx-background-color: #0f4c75 }
+
+.text-field {
+    -fx-text-fill: #bbe1fa;
+}
+
+.button:hover {
+    -fx-border-width: 1;
+    -fx-border-radius: 30;
+    -fx-border-color: #bbe1fa;
+}
+

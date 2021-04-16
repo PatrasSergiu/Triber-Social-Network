@@ -1,0 +1,50 @@
+
+
+.login {
+    -fx-background-image: url("../imgs/wallpaper.png");
+    -fx-background-color: transparent;
+    -fx-border-width:5;
+    -fx-border-color: #1b262c;
+}
+
+.usertxt {
+    -fx-background-color:  #3282b8;
+    -fx-text-fill: #bbe1fa;
+    -fx-border-radius: 60;
+    -fx-background-color: 60;
+}
+
+.btnLogIn {
+    -fx-background-radius: 60;
+    -fx-border-radius: 60;
+}
+
+.replyBtn {
+
+    -fx-graphic: url("../imgs/reply_100px.png");
+    max-width:100%;
+}
+.replyBtn:hover {
+    -fx-graphic: url("../imgs/reply_hover.png");
+}
+
+
+
+.leftPane {
+    -fx-border-radius: 60 0 60 0;
+    -fx-background-radius: 60 0 60 0;
+}
+
+#btnSend:hover {
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-border-color: #D45D79;
+
+}
+
+.username {
+    -fx-background-color: #3282b8;
+    -fx-background-radius: 60;
+    -fx-border-radius: 60;
+    -fx-border-color: #0f4c75;
+}

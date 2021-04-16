@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="370.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendRequestsController">
+   <children>
+      <Label fx:id="userLabel" alignment="CENTER" layoutX="16.0" prefHeight="53.0" prefWidth="328.0" text="Utilizator">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="recievedRequestsTable" layoutX="14.0" layoutY="86.0" prefHeight="195.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnUtilizatorRecieved" prefWidth="62.0" text="Utilizator" />
+          <TableColumn fx:id="columnStatusRecieved" prefWidth="70.0" text="Status" />
+            <TableColumn fx:id="columnDataRecieved" prefWidth="70.0" text="Data" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="53.0" text="Cereri primite">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="290.0" text="Cereri Trimise">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="sentRequestsTable" layoutX="14.0" layoutY="323.0" prefHeight="195.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="columnUtilizatorSent" prefWidth="62.0" text="Utilizator" />
+            <TableColumn fx:id="columnStatusSent" prefWidth="70.0" text="Status" />
+            <TableColumn fx:id="columnDataSent" prefWidth="70.0" text="Data" />
+         </columns>
+      </TableView>
+      <Button layoutX="223.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#retrageCerere" prefHeight="36.0" prefWidth="137.0" text="Retrage cerere" />
+   </children>
+</AnchorPane>

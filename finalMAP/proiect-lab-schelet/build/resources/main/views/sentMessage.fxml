@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="41.0" prefWidth="262.0" style="-fx-background-radius: 70; -fx-background-color: #0f4c75; -fx-border-color: #bbe1fa; -fx-border-radius: 70;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.sentMessageController">
+   <children>
+      <Label fx:id="sentLabel" alignment="CENTER_RIGHT" layoutX="7.0" prefHeight="47.0" prefWidth="255.0" text="Label" textFill="#bbe1fa" wrapText="true">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="replyLabel" layoutX="31.0" layoutY="15.0" minHeight="2.0" minWidth="2.0" prefHeight="2.0" prefWidth="2.0" visible="false" />
+   </children>
+</AnchorPane>

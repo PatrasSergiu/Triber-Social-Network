@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="62.0" prefWidth="453.0" style="-fx-background-radius: 70; -fx-background-color: #0f4c75; -fx-border-radius: 70; -fx-border-color: #bbe1fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.newsController">
+   <children>
+      <Label fx:id="eventLabel" layoutX="53.0" prefHeight="64.0" prefWidth="395.0" text="Label" textFill="#bbe1fa" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/event_32px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

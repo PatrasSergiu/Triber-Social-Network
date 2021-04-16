@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="602.0" styleClass="login" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.newAccController">
+    <children>
+        <TextField id="usertxt" fx:id="usernameTextField" layoutX="334.0" layoutY="61.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" styleClass="usertxt" stylesheets="@login.css">
+            <font>
+                <Font name="Century" size="14.0" />
+            </font></TextField>
+        <PasswordField fx:id="passwordTextField" layoutX="334.0" layoutY="134.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" />
+        <Label layoutX="334.0" layoutY="23.0" prefHeight="47.0" prefWidth="234.0" text="Username" textFill="#0f4c75">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="334.0" layoutY="101.0" prefHeight="33.0" prefWidth="234.0" text="Parola" textFill="#0f4c75">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="198.0" prefHeight="50.0" prefWidth="170.0" text="TRIBER" textAlignment="CENTER" textFill="#d45d79">
+            <font>
+                <Font name="Century" size="41.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="191.0" fitWidth="170.0" layoutX="76.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../imgs/handshake_200px.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="newAccount" layoutX="33.0" layoutY="277.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #d45d79; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" text="CREEAZA CONT" textFill="#1b262c">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Button>
+      <Label layoutX="334.0" layoutY="174.0" prefHeight="33.0" prefWidth="234.0" text="Confirma parola" textFill="#0f4c75">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confPasswordTextField" layoutX="334.0" layoutY="207.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" />
+      <Label layoutX="334.0" layoutY="247.0" prefHeight="33.0" prefWidth="234.0" text="Nume" textFill="#0f4c75">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="usertxt" fx:id="numeTextField" layoutX="334.0" layoutY="281.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" styleClass="usertxt" stylesheets="@login.css">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="334.0" layoutY="321.0" prefHeight="33.0" prefWidth="234.0" text="Prenume" textFill="#0f4c75">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="usertxt" fx:id="prenumeTextField" layoutX="334.0" layoutY="351.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #3282b8; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" styleClass="usertxt" stylesheets="@login.css">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="newAccount1" layoutX="33.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#backToLogin" prefHeight="47.0" prefWidth="234.0" style="-fx-background-color: #d45d79; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #0f4c75;" text="LOG IN" textFill="#1b262c">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
